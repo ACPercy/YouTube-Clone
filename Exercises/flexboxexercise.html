@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .div1{
+        display: flex;
+        flex-direction: row;
+      }
+      .div1-1{
+        background-color: lightcoral;
+        width: 200px;
+      }
+      .div1-2{
+        background-color: lightgreen;
+        width: 75px;
+      }
+      .flex2{
+        display: flex;
+        flex-direction: row;
+        margin-top:10px;
+      }
+      .flex2-1{
+        background-color: lightcoral;
+        width: 50px;
+      }
+      .flex2-2{
+        background-color: lightgreen;
+        flex: 1;
+      }
+      .flex2-3{
+        background-color: lightcoral;
+        width: 75px;
+      }
+      .flex3{
+        display: flex;
+        flex-direction: row;
+        margin-top:10px;
+        justify-content: space-between;
+      }
+      .colorpink{
+        background-color: lightcoral;
+      }
+      .flex4{
+        display: flex;
+        flex-direction: row;
+        margin-top:10px;
+        height: 50px;
+        border-style: solid;
+        border-color: gray;
+        border-width: 1px;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .flex5{
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+        margin-top:10px;
+        height: 120px;
+        border-style: solid;
+        border-color: lightgray;
+        border-width: 1px;
+        border-radius: 5px;
+      }
+      .flex5-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .flex5-p{
+        margin: 6px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+      }
+      .flex5-button{
+        margin: 6px;
+        border: none;
+        border-radius: 15px;
+        font-size: 16px;
+        color: white;
+        background-color: rgb(42, 130, 245);
+        padding: 5px 12px 5px 12px;
+      }
+      .flex6{
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+        margin-top:10px;
+        height: 230px;
+        padding: 5px;
+        border-style: solid;
+        border-color: lightgray;
+        border-width: 1px;
+        border-radius: 5px;
+        align-items: center;
+      }
+      .image1{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+        margin: 5px;
+        align-items: center;
+      }
+      .flex6-1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom:5px;
+      }
+      .flex6-p{
+        width: 200px;
+      }
+      .flex6-p1{
+        margin: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .flex6-p2{
+        margin: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+        font-size: 16px;
+      }
+      .flex6-button{
+        margin: 6px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(42, 130, 245);
+        width: 75px;
+        height: 38px;
+      }
+      .flex7{
+        margin-top: 10px;
+        padding: 0 10px 0 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(129, 63, 190);
+        height: 55px;
+        max-width: 800px;
+        align-items: center;
+      }
+      .flex7-p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .flexinput{
+        width: 500px;
+        border-radius: 20px;
+        border: none;
+        padding: 10px 10px 10px 15px;
+      }
+      .flex7-button{
+        padding: 5px 10px 5px 10px;
+        color: white;
+        background-color: transparent;
+        border: solid;
+        border-width: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <div class="div1-1">200px</div>
+      <div class="div1-2">75px</div>
+    </div>
+
+    <div class="flex2">
+      <div class="flex2-1">item1</div>
+      <div class="flex2-2">item2</div>
+      <div class="flex2-3">item3</div>
+    </div>
+
+    <div class="flex3">
+      <div class="colorpink">item1</div>
+      <div class="colorpink">item2</div>
+      <div class="colorpink">item3</div>
+      <div class="colorpink">item3</div>
+    </div>
+
+    <div class="flex4">
+      <div class="colorpink">item1</div>
+      <div class="colorpink">item2</div>
+    </div>
+
+    <div class="flex5">
+      <div class="flex5-1">
+        <p class="flex5-p">Home</p>
+        <button class="flex5-button">14</button>
+      </div>
+      <div class="flex5-1">
+        <p class="flex5-p">Notifications</p>
+        <button class="flex5-button">3</button>
+      </div>
+      <div class="flex5-1">
+        <p class="flex5-p">Messages</p>
+        <button class="flex5-button">5</button>
+      </div>
+    </div>
+
+    <div class="flex6">
+      <div class="flex6-1">
+        <div class="imgage">
+          <img class="image1" src="p1.jpg">
+        </div>
+        <div class="flex6-p">
+          <p class="flex6-p1">Anna</p>
+          <p class="flex6-p2">the eldest</p>
+          <p class="flex6-p2">Popular</p>
+        </div>
+        <button class="flex6-button">Follow</button>
+      </div>
+      <div class="flex6-1">
+        <img class="image1" src="p2.jpg">
+        <div class="flex6-p">
+          <p class="flex6-p1">Angelica</p>
+          <p class="flex6-p2">the middle child</p>
+          <p class="flex6-p2">Popular</p>
+        </div>
+        <button class="flex6-button">Follow</button>
+      </div>
+      <div class="flex6-1">
+        <img class="image1" src="p3.jpg">
+        <div class="flex6-p">
+          <p class="flex6-p1">Ariane</p>
+          <p class="flex6-p2">the youngest</p>
+          <p class="flex6-p2">Popular</p>
+        </div>
+        <button class="flex6-button">Follow</button>
+      </div>
+    </div>
+    
+    <div class="flex7">
+      <p class="flex7-p">Home</p>
+      <input class="flexinput" type="text" placeholder="Search">
+      <button class="flex7-button">Download</button>
+    </div>
+  </body>
+</html>

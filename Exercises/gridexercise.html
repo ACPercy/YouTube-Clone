@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .grid-div1{
+        display: grid;
+        grid-template-columns: 200px 75px;
+        margin: 10px;
+      }
+      .color1{
+        background-color: lightgreen;
+      }
+      .color2{
+        background-color: lightcoral;
+      }
+      .grid-div2{
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+        margin: 10px;
+      }
+      .grid-div3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 10px;
+        row-gap: 10px;
+        column-gap: 10px;
+      }
+      .div4{
+      display: grid;
+      grid-template-columns: 170px 170px 170px;
+      margin: 10px;
+    }
+    .div4-1{
+      width: 150px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+      height: 250px;
+    }
+    .div4-2{
+      width: 150px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+      height: 250px;
+    }
+    .div4-3{
+      width: 150px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+      height: 250px;
+    }
+    .pix2{
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    .p4-1{
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      margin: 5px 0 0 8px;
+    }
+    .p4-2{
+      font-size: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: gray;
+      margin: 2px 0 0 8px;
+    }
+    .but2{
+      margin: 12px 0 0 8px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      background-color: rgb(55, 150, 238);
+      width: 90px;
+      height: 30px;
+      vertical-align: middle;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="grid-div1">
+      <div class="color1">200px</div>
+      <div class="color2">75px</div>
+    </div>
+    <div class="grid-div2">
+      <div class="color1">col1</div>
+      <div class="color2">col2</div>
+      <div class="color1">col3</div>
+    </div>
+    <div class="grid-div3">
+      <div class="color1">col1</div>
+      <div class="color1">col2</div>
+      <div class="color1">col3</div>
+      <div class="color1">col4</div>
+      <div class="color1">col1</div>
+      <div class="color1">col2</div>
+      <div class="color1">col3</div>
+      <div class="color1">col4</div>
+    </div>
+    <div class="div4">
+      <div class="div4-1">
+        <img class="pix2" src="p1.jpg">
+        <p class="p4-1">Anna</p>
+        <p class="p4-2">2 mutual friends</p>
+        <button class="but2">Add Friend</button>
+      </div>
+      <div class="div4-2">
+        <img class="pix2" src="p1.jpg">
+        <p class="p4-1">Anna</p>
+        <p class="p4-2">2 mutual friends</p>
+        <button class="but2">Add Friend</button>
+      </div>
+      <div class="div4-3">
+        <img class="pix2" src="p1.jpg">
+        <p class="p4-1">Anna</p>
+        <p class="p4-2">2 mutual friends</p>
+        <button class="but2">Add Friend</button>
+      </div>
+    </div>
+  </body>
+</html>

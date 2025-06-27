@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .body{
+        height: 3000px;
+      }
+      .div-relative{
+        position: relative;
+      }
+      .button-relative{
+        background-color: black;
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-family: Roboto, Arial;
+        font-size: 16px;
+        padding: 10px 13px 10px 13px;
+        border: none;
+        border-radius: 20px;
+      }
+      .div-fixed{
+        background-color: gray;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        width: 320px;
+        height: 180px;
+      }
+      .button-fixed{
+        background-color: black;
+        color: white;
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        font-family: Roboto, Arial;
+        font-size: 16px;
+        padding: 10px 13px 10px 13px;
+        border: none;
+        border-radius: 20px;
+      }
+      .time{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        background-color: black;
+        color: white;
+        font-family: Roboto, Arial;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 4px 6px 4px 6px;
+      }
+      .shirt-container1{
+        display: flex;
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 260px;
+        height: 280px;
+        background-color: gray;
+        align-items: end;
+        justify-content: center;
+        padding-bottom: 10px;
+      }
+      .shirt{
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        
+      }
+      .discount{
+        position: absolute;
+        background-color: black;
+        color: white;
+        top: 5px;
+        right: 0;
+        font-family: Roboto, Arial;
+        font-size: 12px;
+        padding: 6px 10px 6px 10px;
+      }
+      .shirt-container2{
+        display: flex;
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 260px;
+        height: 280px;
+        background-color: gray;
+        align-items: end;
+        justify-content: center;
+        margin-top: 10px;
+        
+      }
+      .add-container-bgc{
+        height: 80px;
+        width: 260px;
+        background-color: white;
+        opacity: 0.5;
+      }
+      .add-container{
+        
+      }
+      .button-add{
+        position: absolute;
+        width: 90px;
+        height: 30px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        color: black;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <div class="div-relative">
+      <button class="button-relative">X</button>
+    </div>
+    
+    <div class="div-fixed">
+      <button class="button-fixed">X</button>
+      <div class="time">0:29</div>
+    </div>
+
+    <div class="shirt-container1">
+      <img class="shirt" src="shirt.png">
+      <div class="discount">20% OFF</div>
+    </div>
+
+    <div class="shirt-container2">
+      <img class="shirt" src="shirt.png">
+      <div class="discount">20% OFF
+      </div>
+      <div class="add-container-bgc">
+      </div>
+        <button class="button-add">Add to Cart</button>
+    </div>
+
+  </body>
+</html>
